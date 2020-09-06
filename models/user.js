@@ -21,8 +21,32 @@ const userSchema= new mongoose.Schema({
     },
     avatar:{
         type: String
+    },
+
+
+    about:{
+        type: String
+
+
+    },
+    experience:{
+        type:String
+    },
+    education:{
+        type:String
+    },
+    licenses:{
+        type:String
+    },
+    certifications:{
+        type:String
+    },
+    skills:{
+        type:String
     }
-},{
+},
+    
+{
     timestamps:true
 });
 // set up for uploading files

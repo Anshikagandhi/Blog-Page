@@ -6,6 +6,7 @@
     <section id="feed-posts">
         <h1 style="font-size: 50px;"> 
           POSTS
+          <i class="fas fa-comments"></i>
         </h1>
         <% if (locals.user){ %>
    
@@ -30,22 +31,25 @@
          </section>
    
          <section id="users-friends">
-           <h1 style="font-size: 30px">My Friends</h1>
+           <h1 style="font-size: 30px">My Friends
+            <i class="fas fa-user-friends"></i>
+          </h1>
            <% for(u of all_users){ %>
-             <p style="font-size: 20px" >
-               <a href="/users/profile/<%=  u.id %>" ><%= u.name %></a>
-             </p>
+             <li style="font-size: 30px;"  >
+               <a href="/users/profile/<%=  u.id %>" style="color: lightgoldenrodyellow;" ><%= u.name %></a>
+             </li>
+             <br>
              
    
           <% }%>
           <% if (locals.user){ %>
           
           <div style="border:2px solid grey; width: 350px; height: 350px;" id="user-chat-box">
-            <div style="width: 100px;height: 30px; background-color: rgb(230, 129, 145); margin: 25px; padding: 5px;">
+            <div style="width: 100px;height: 30px; background-color: rgb(230, 129, 145); margin: 25px; padding: 5px; color: papayawhip;">
               Other message
 
             </div>
-            <div style="width: 100px;height: 30px; background-color:rgb(97, 168, 196); margin: 25px; padding: 5px; margin-left: 200px; ">
+            <div style="width: 100px;height: 30px; background-color:rgb(97, 168, 196); margin: 25px; padding: 5px; margin-left: 200px; color: papayawhip; ">
                Self message
 
             </div>
@@ -71,7 +75,7 @@
 <script>
     $('.toggle-like-button').each(function(){
         let self = this;
-        console.log(';h');
+        
         let toggleLike = new ToggleLike(self);
     });
   </script>

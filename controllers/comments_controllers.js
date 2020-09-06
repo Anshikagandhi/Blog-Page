@@ -20,7 +20,7 @@ module.exports.create=   function(req,res){
                 }
                 post.comments.push(comment);
                 post.save();
-                
+                ''
                 
                 comment= await  comment.populate('user','name email').execPopulate();
                 commentsMailer.newComment(comment);
@@ -28,7 +28,7 @@ module.exports.create=   function(req,res){
 
                 req.flash('success','Comment added successfully');
 
-                 return res.redirect('/');
+                 return res.redirect('/');co
             } );
         }
     });

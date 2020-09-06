@@ -25,7 +25,7 @@ class ToggleLike{
                     likesCount -= 1;
                     
                 }else{
-                    console.log('air');
+                    
 
                     likesCount += 1;
                 }

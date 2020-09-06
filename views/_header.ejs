@@ -1,11 +1,13 @@
-<header id="header" style="font-size: 25PX ;color: black; "  >
-        <h1 >
-            CODEIAL
+<header id="header" style="font-size: 18px ;color: black; "  >
+        <h1 style="font-family:Georgia, 'Times New Roman', Times, serif" >
+            CONNECT ME
+            <i class="fas fa-sign-language"></i>
+
         </h1>
         <ul>
             <% if (locals.user){ %>
                 <li style="list-style-type: none;">
-                   <a href="/users/profile/" + user._id >
+                   <a href="/users/profile/"+ user._id>
                     <%= user.name %>
 
                    </a>
@@ -17,11 +19,9 @@
 
              <%} else { %>
                 <li style="list-style-type: none;">
-                    <a href="/users/sign-in" style="color:black;margin-left: 1000px">Login Page</a>
+                    <a href="/users/sign-in" style="color:black;margin-left: 950px">Login Page</a>
                 </li>
-                <li style="list-style-type: none;">
-                    <a href="/users/sign-up" style="color:black;margin-left: 80%">Create an account</a>
-                </li>
+               
 
 
              <%} %>

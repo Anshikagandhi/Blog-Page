@@ -52,7 +52,7 @@ const production={
         host:'smtp.gmail.com', //created gmail domain
         port:587,
         secure: false,
-        auth:{
+        auth:{ 
             user:process.env.CODEIAL_GMAIL_USERNAME,
             pass:process.env.CODEIAL_GMAIL_PASSWORD
         }
