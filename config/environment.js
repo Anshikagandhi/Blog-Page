@@ -23,8 +23,8 @@ const development={
         secure: false,
         auth:{
             user:'anshikagandhi31',
-            pass:'anshika1!'
-        }
+           pass:'anshika1!'
+         }
     },
     google_client_id:'1043263709655-nqtj19eugdtdsjbt9s4sqe6023bpjs0j.apps.googleusercontent.com',
     google_client_secret:'BTClewgU4xDe92NVMbkg7hSa',

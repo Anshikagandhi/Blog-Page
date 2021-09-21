@@ -1,25 +1,415 @@
 
+<!DOCTYPE html>
+<html>
+<head>
+    <title>My Resume</title>
+    <link rel="stylesheet" type="text/css" href="/css/resumestyle.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
+    <meta name="viewport" content="width=device-width initial-scale=1 minimum-scale=1">
+    
 
-<img src="<%= profile_user.avatar %>"alt="<%= profile_user.name %>"width="300">
-       
+</head>
+<body>
+
+    <header id="body-header">
+        <nav>
+
+            <ul class="horizontal-list text-center nav-menu">
+                <li>
+                    <a href="#"> Home </a>
+                </li>
+                <li>
+                    <a href="#about"> About </a>
+                </li>
+                <li>
+                    <a href="#skills"> Skills </a>
+                </li>
+                <li>
+                    <a href="#experience">Experience</a>
+                </li>
+                <li>
+                    <a href="#education">Education</a>
+                </li>
+                <li>
+                    <a href="#portfolio">Portfolio</a>
+                </li>
+                <li>
+                    <a href="#contact">Contact</a>
+                </li>
+            </ul>
+
+        </nav>
+
+        <div id="name-social-container">
+            <div class="text-center">
+                <h1 id="my-name">Anshika Gandhi</h1>
+            </div>
+            <div>
+                <ul class="horizontal-list text-center social-icons">
+                    <li>
+                        <a href="https://www.linkedin.com/in/anshika-gandhi-b7b083193/">
+                            <i class="fab fa-linkedin-in"></i>
+                        </a>
+                    </li>
+                   
+                    <li>
+                        <a href="https://github.com/Anshikagandhi">
+                            <i class="fab fa-github"></i>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://www.facebook.com/anshika.gandhi/">
+                            <i class="fab fa-facebook-f"></i>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://www.hackerrank.com/anshikagandhi13">
+                            <i class="fab fa-hackerrank"></i>
+                        </a>
+                    </li>
+                </ul>
+
+            </div>
+
+        </div>
+
+    </header>
+    <main>
+
+        <section id="about">
+            <div id="my-image">
+                <img src="/images/IMG_4737.jpg">
+            </div>
+
+            <div id="about-para">
+
+               <p >I am a Full Stack developer with experience in building websites and web applications. I specialize in C++ and have experience working with Java Script . I also have basic knowledge of working with Vue and React.</p>  <span class="text-highlight">
+
+            </div>
+
+        </section>
 
 
 
-<%  if(user.id == profile_user.id){%>
-  <!--if user mathches then show the form-->
-  <form action="/users/update/<%= profile_user.id %>" enctype="multipart/form-data" method="POST">
-    <input type="text" name="name" placeholder="your name" value="<%= profile_user.name %>" required>
-    <input type="email" name="email" placeholder="your email" value="<%= profile_user.email %>" required>
-    <input type="file" name="avatar" placeholder="Profile picture">
-    <input type="submit" value="Update">
+        <section id="skills">
+            <h1 class="section-heading mb75px">
+            <span>
+                <i class="fas fa-chalkboard-teacher"></i>
+            </span>
+            <span>Skills</span>
+        </h1>
+        <div id="skill-container" class="skill-display">
 
-  </form>
+                <div class="skill-progress">
+                    <div class="ninety-five-percent mb-blue" data-bar-width="95">
+                        <div class="skill-name">
+                            <span>C++</span>
+                        </div>
+                    </div>
+                </div>  
+      
+            <br>
+    
+                <div class="skill-progress">
+                    <div class="ninety-percent mb-orange"data-bar-width="90">
+                        <div class="skill-name">
+                            <span>JAVASCRIPT</span>
+                        </div>
+                    </div>
+                    
+                </div>
+                
+                
+        
+            <br>
+                <div class="skill-progress">
+                    <div class="eightyfive-percent mb-orange"data-bar-width="87">
+                        <div class="skill-name">
+                            <span>HTML</span>
+                        </div>
+                    </div>
+                    
+                </div>
+
+          <br>
+                <div class="skill-progress">
+                    <div class="eightyseven-percent mb-green"data-bar-width="60">
+                        <div class="skill-name">
+                            <span>MongoDB</span>
+                        </div>
+                    </div>
+                    
+                </div>  
+        <br>
+                <div class="skill-progress">
+                    <div class="eightynine-percent m-grey"data-bar-width="85">
+                        <div class="skill-name">
+                            <span>CSS</span>
+                        </div>
+                    </div>
+                    
+                </div>  
+         <br>
+                <div class="skill-progress">
+                    <div class="eighty-percent m-cyan"data-bar-width="50">
+                        <div class="skill-name">
+                            <span>NodeJs</span>
+                        </div>
+                    </div>
+                    
+                </div>  
+              </div>
+        
+        </section>
+
+        <section id="experience">
+            <h1 class="section-heading mb75px">
+                <span>
+                  <i class="fas fa-briefcase"></i>
+                </span>
+                <span> WorkExperience </span>
+            </h1>
+            <div class="timeline">
+                <div class="timeline-box">
+                    <div><img src="https://ninjasfiles.s3.amazonaws.com/0000000000001394.png"></div>
+                    <div class="timeline-box-details">
+                       <div class="t-2">
+                           
+                           <div><span>Teaching Assistant</div>
+                            <div>MAY2020-SEPT2020</div>
+                           <div>Coding Ninjas</div>
+                        </div>
+                    <div>
+                        <p>I have worked as  a teaching assistant in Coding Ninjas,and during internship, i have taken doubts session,debuged codes and helped students with the projects and various assignments.</p>  
+                        </div>
+                    </div> 
+                </div>
+                
+ 
+                <div class="timeline-divider">
+                   <div class="timeline-traveller">
+                       <i class="fas fa-plane"></i>
+
+                   </div> 
+                                        
+                </div>
+ 
 
 
-<%} else {%>
-  <!--else show only the profile info-->
-  <p><%= profile_user.name %></p>
-<p><%= profile_user.email %></p>
+            </div>
 
 
-<%}%>
+        </section>
+        
+
+        <section id="education">
+             <h1 class="section-heading mb75px">
+                <span>
+                  <i class="fas fa-briefcase"></i>
+                </span>
+                <span> Education </span>
+            </h1>
+            <div class="timeline">
+                <div class="timeline-box">
+                    <div><img src="/images/download.png"></div>
+                    <div class="timeline-box-details">
+                       <div class="t-2">
+                           
+                           <div><span><i class="fas fa-graduation-cap"></i></span> BVCOE</div>
+                            <div>2017-2021</div>
+                           <div>BHARATI VIDYAPEETHS COLLEGE OF ENGINEERING</div>
+                           <div>CGPA 8.53</div>
+                        </div>
+                    <div>
+                        
+                          <p>I have done my graduation in a field of "Electronic and communication engineering" from Bharati Vidyappeth College Of Engineering.</p>  
+                        </div>
+                    </div> 
+                </div>
+                 <div class="timeline-box">
+                    <div><img src="/images/download.jpeg"></div>
+                    <div class="timeline-box-details">
+                       <div class="t-2">
+                           
+                           <div><span><i class="fas fa-school"></i></span>St. Mark's Sr.Sec.Public School </div>
+                           <div>12<sup>th</sup></div>
+                           <div>2016-2017</div>
+                           <div>CBSE Board</div>
+                           <div>percentage 92</div>
+                        </div>
+                    <div>
+                           <p>I have done my senior secondary education in  Non-medical field from Delhi.</p>
+                        </div>
+                    </div> 
+                </div>
+                <div class="timeline-box">
+                    <div><img src="/images/download.jpeg"></div>
+                    <div class="timeline-box-details">
+                       <div class="t-2">
+                           
+                           <div><span><i class="fas fa-school"></i></span>St. Mark's Sr. Sec Public School</div>
+                           <div>10<sup>th</sup></div>
+                            <div>2014-2015</div>
+                           <div>CBSE Board</div>
+                           <div>CGPA 9.4</div>
+                        </div>
+                    <div>
+                        
+                          <p>I have done my high school from Delhi</p>  
+                        </div>
+                    </div> 
+                </div>
+                
+                <div class="timeline-divider">
+                   <div class="timeline-traveller">
+                       <i class="fas fa-car-side"></i>
+
+                   </div> 
+                                        
+                </div>
+ 
+ 
+
+            </div>
+
+
+        </section>
+
+          <section id="portfolio">
+            <h1 class="section-heading mb75px">
+                <span>
+                    <i class="fas fa-th-list"></i>
+                </span>
+                <span> Portfolio </span>
+            </h1>
+
+            <div id="portfolio-container">
+
+                
+
+                </div>
+                <div class="portfolio-image-container">
+                    <img src="/images/download (2).jpeg">
+                    <div class="portfolio-details">
+                        <p>
+                           It's a simple nodejs project .A to do list is used for the addition of the task to be done in future.It helps us to maintain the track of the tasks to be done.
+                        </p>
+                    </div>
+
+                </div>
+                <div class="portfolio-image-container">
+                    <img src="/images/download (1).jpeg">
+                    <div class="portfolio-details">
+                        <p>
+                            It's a social media website "CONNECT ME".It has all the features like posts, comments , likes.Proper authentication is present.
+                        </p>
+                    </div>
+
+                </div>
+                <div class="portfolio-image-container">
+                    <img src="/images/images.jpeg">
+                    <div class="portfolio-details">
+                        <p>
+                            It's Musicplayer project based on HTML and CSS. Its a completely static website.
+                        </p>
+                    </div>
+
+                </div>
+
+            </div>
+        </section>
+
+        <section id="contact">
+
+            <div class="contact-background">
+                <h1 class="section-heading mb75px">
+                  <span>
+                     <i class="far fa-address-card"></i>
+                 </span>
+                 <span>Contact</span>
+             </h1>
+            </div>
+              <div class="contact-information">
+                <div class="contact-form">
+                    <input type="text" name="myname" placeholder="Your name">
+                    <input type="email" name="myemail" placeholder="Your Email">
+                    <textarea placeholder="Message" rows="2" name="mymessage" placeholder="Message"></textarea>
+                    <button>SEND MESSAGE
+                    </button>
+                </div>
+                <div class="contact-address">
+                    <div class="my-conteact-header">
+                        Get In touch
+                    </div>
+                    <div class="contact-content">
+                        Please feel free to connect with me, as it will be  a pleasure to get noticed by you!
+                    </div>
+                    <div class="my-conteact-header">
+                        Here are my contact details:
+                    </div>
+                    <table>
+                        <tr>
+                            <td>
+                                <i class="fas fa-map-marker-alt" aria-hidden="true"></i>
+                            </td>
+                            <td>
+                                <span>Delhi</span>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <i class="fas fa-mobile-alt"></i>
+                            </td>
+                            <td>
+                                <span>+919599952931</span>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <i class="far fa-envelope" aria-hidden="true"></i>
+                            </td>
+                            <td>
+                                <span>anshikagandhi31@gmail.com</span>
+                            </td>
+                        </tr>
+                    </table>
+                </div>
+            </div>
+    
+            <div class="text-center">
+                <ul class="horizontal-list text-center social-icons">
+                    <li>
+                        <a href="#">
+                            <i class="fab fa-linkedin-in"></i>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <i class="fab fa-stack-overflow"></i>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <i class="fab fa-google-plus-g"></i>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <i class="fab fa-facebook-f"></i>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <i class="fab fa-quora"></i>
+                        </a>
+                    </li>
+                </ul>
+
+            </div>
+        </section>
+
+    </main>
+    <script type="text/javascript" src="/js/resumejs.js"></script>
+
+</body>
+</html>

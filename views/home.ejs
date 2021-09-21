@@ -1,6 +1,7 @@
 
         
  <link rel="stylesheet" href="/css/home.css">
+ <link rel="stylesheet" href="/css/chat_box.css">
  
  <div id="home-container">
     <section id="feed-posts">
@@ -44,22 +45,23 @@
           <% }%>
           <% if (locals.user){ %>
           
-          <div style="border:2px solid grey; width: 350px; height: 350px;" id="user-chat-box">
-            <div style="width: 100px;height: 30px; background-color: rgb(230, 129, 145); margin: 25px; padding: 5px; color: papayawhip;">
-              Other message
+          <div  id="user-chat-box">
+            <ul id="chat-messages-list">
+            <li  class="other-message">
+              <span>Other message</span>
+
+            </li>
+            <li  class="self-message">
+               <span>Self message</span>
+
+            </li>
+            </ul>
+
+            <div id="chat-message-input-container">
+              <input id="chat-message-input" placeholder="Enter the message" >
+              <button id="send-message" >SEND</button>
 
             </div>
-            <div style="width: 100px;height: 30px; background-color:rgb(97, 168, 196); margin: 25px; padding: 5px; margin-left: 200px; color: papayawhip; ">
-               Self message
-
-            </div>
-            
-
-            <form style="margin-top: 180px;">
-              <input type="text" placeholder="Enter the message" required style="width: 80%; height: 38px;">
-              <input type="submit" name="SEND" style="background-color: rgb(84, 216, 84);height: 35px;;">
-
-            </form>
             
 
 
