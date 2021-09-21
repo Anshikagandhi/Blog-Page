@@ -1181,3 +1181,7 @@
 [0mGET / [32m200 [0m247.319 ms - 3418[0m
 [0mGET /users/sign-in [36m304 [0m42.033 ms - -[0m
 [0mGET /users/sign-up [32m200 [0m27.682 ms - 3047[0m
+[0mGET /users/sign-in [36m304 [0m43.755 ms - -[0m
+[0mPOST /users/create-session [36m302 [0m24.626 ms - 46[0m
+[0mGET / [32m200 [0m31.915 ms - 4905[0m
+[0mPOST /posts/create [32m200 [0m43.415 ms - 463[0m
